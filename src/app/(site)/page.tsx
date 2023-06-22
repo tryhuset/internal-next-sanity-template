@@ -1,26 +1,21 @@
 import { getProjects } from "@/sanity/sanity-utils";
-import Image from "next/image";
-import Link from "next/link";
-import { urlForImage } from "@/sanity/lib/image";
+import { draftMode } from "next/headers";
+import PreviewProvider from "@/components/PreviewProvider";
+import ProjectList from "@/components/ProjectList";
+import PreviewProjectList from "@/components/PreviewProjectList";
 
 export default async function Home() {
+  const preview = draftMode().isEnabled
+    ? { token: process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN! }
+    : undefined;
   const projects = await getProjects();
+  if (preview) {
+    return (
+      <PreviewProvider token={preview.token}>
+        <PreviewProjectList data={projects} />
+      </PreviewProvider>
+    );
+  }
 
-  return (
-    <div>
-      {projects.map((project) => (
-        <Link href={`/projects/${project.slug}`} key={project._id}>
-          {project.image && (
-            <Image
-              src={urlForImage(project.image).url()}
-              alt={project.name}
-              width={750}
-              height={300}
-            />
-          )}
-          <div>{project.name}</div>
-        </Link>
-      ))}
-    </div>
-  );
+  return <ProjectList data={projects} />;
 }
