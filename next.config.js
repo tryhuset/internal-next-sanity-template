@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    SANITY_API_READ_TOKEN: process.env.SANITY_API_READ_TOKEN,
+  },
   images: {
     remotePatterns: [
       {

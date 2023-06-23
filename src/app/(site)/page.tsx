@@ -6,7 +6,7 @@ import PreviewProjectList from "@/components/ProjectList/PreviewProjectList";
 
 export default async function Home() {
   const preview = draftMode().isEnabled
-    ? { token: process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN! }
+    ? { token: process.env.SANITY_API_READ_TOKEN! }
     : undefined;
 
   const projects = await getProjects();

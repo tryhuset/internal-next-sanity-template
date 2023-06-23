@@ -10,7 +10,7 @@ type Props = {
 
 export default async function Page({ params }: Props) {
   const preview = draftMode().isEnabled
-    ? { token: process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN! }
+    ? { token: process.env.SANITY_API_READ_TOKEN! }
     : undefined;
   const page = await getPage(params.slug);
 
