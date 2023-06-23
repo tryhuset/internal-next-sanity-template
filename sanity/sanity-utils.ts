@@ -12,6 +12,7 @@ export const getProjectsQuery = groq`*[_type == "project"]{
       url,
       content
     }`;
+
 export async function getProjects(): Promise<Project[]> {
   return createClient(clientConfig).fetch(getProjectsQuery);
 }
@@ -31,26 +32,23 @@ export async function getProject(slug: string): Promise<Project> {
   );
 }
 
+export const getPagesQuery = groq`*[_type == "page"]{
+  _id,
+  _createdAt,
+  title,
+  "slug": slug.current
+}`;
 export async function getPages(): Promise<Page[]> {
-  return createClient(clientConfig).fetch(
-    groq`*[_type == "page"]{
-      _id,
-      _createdAt,
-      title,
-      "slug": slug.current
-    }`
-  );
+  return createClient(clientConfig).fetch(getPagesQuery);
 }
 
+export const getPageQuery = groq`*[_type == "page" && slug.current == $slug][0]{
+  _id,
+  _createdAt,
+  title,
+  "slug": slug.current,
+  content
+}`;
 export async function getPage(slug: string): Promise<Page> {
-  return createClient(clientConfig).fetch(
-    groq`*[_type == "page" && slug.current == $slug][0]{
-      _id,
-      _createdAt,
-      title,
-      "slug": slug.current,
-      content
-    }`,
-    { slug }
-  );
+  return createClient(clientConfig).fetch(getPageQuery, { slug });
 }
