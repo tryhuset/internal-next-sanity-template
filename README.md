@@ -4,9 +4,9 @@ This template is the foundation for a Next.js app with a router and Sanity 3 liv
 
 ## Features
 
-- Live previews using next-sanity
+- Live previews using `next-sanity`
 - Customized Sanity Desk Tool
-- Just TypeScript
+- TypeScript
 - Eslint configuration
 - Environment variables
 
