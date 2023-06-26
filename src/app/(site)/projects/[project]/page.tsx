@@ -1,7 +1,7 @@
-import { getProject } from "@/sanity/sanity-utils";
+import { getProject } from "@/src/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
-import { urlForImage } from "@/sanity/lib/image";
+import { urlForImage } from "@/src/sanity/lib/image";
 
 type Props = {
   params: { project: string };

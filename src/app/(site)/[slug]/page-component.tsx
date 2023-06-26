@@ -1,5 +1,5 @@
 import { PortableText } from "@portabletext/react";
-import { Page } from "@/types/Page";
+import { Page } from "@/src/types/Page";
 
 export function Page({ page }: { page: Page }) {
   return (

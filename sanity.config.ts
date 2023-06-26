@@ -5,12 +5,12 @@
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
-import resolveProductionUrl from "@/sanity/config/resolveProductionUrl";
+import resolveProductionUrl from "@/src/sanity/config/resolveProductionUrl";
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import { apiVersion, dataset, projectId } from "./sanity/env";
-import schemas from "./sanity/schemas";
-import { getDefaultDocumentNode } from "@/sanity/config/structure";
+import { apiVersion, dataset, projectId } from "./src/sanity/env";
+import schemas from "./src/sanity/schemas";
+import { getDefaultDocumentNode } from "@/src/sanity/config/structure";
 
 export default defineConfig({
   title: "Title",

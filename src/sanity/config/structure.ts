@@ -1,6 +1,6 @@
 import Iframe from "sanity-plugin-iframe-pane";
 import type { DefaultDocumentNodeResolver } from "sanity/desk";
-import { resolveProductionUrl } from "@/sanity/config/resolveProductionUrl";
+import { resolveProductionUrl } from "@/src/sanity/config/resolveProductionUrl";
 
 export const getDefaultDocumentNode: DefaultDocumentNodeResolver = (
   S,

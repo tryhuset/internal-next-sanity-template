@@ -1,6 +1,6 @@
-import { getPage } from "@/sanity/sanity-utils";
+import { getPage } from "@/src/sanity/sanity-utils";
 import { draftMode } from "next/headers";
-import PreviewProvider from "@/components/PreviewProvider";
+import PreviewProvider from "@/src/components/PreviewProvider";
 import { Page as PageComponent } from "./page-component";
 import { PreviewPage } from "./preview";
 

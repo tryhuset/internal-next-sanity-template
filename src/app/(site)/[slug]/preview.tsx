@@ -1,8 +1,8 @@
 "use client";
 import { Page as PageComponent } from "./page-component";
 import { useLiveQuery } from "next-sanity/preview";
-import { getPageQuery } from "@/sanity/sanity-utils";
-import { Page } from "@/types/Page";
+import { getPageQuery } from "@/src/sanity/sanity-utils";
+import { Page } from "@/src/types/Page";
 
 export function PreviewPage({
   initialData,

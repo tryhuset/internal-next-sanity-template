@@ -1,8 +1,8 @@
-import { getProjects } from "@/sanity/sanity-utils";
+import { getProjects } from "@/src/sanity/sanity-utils";
 import { draftMode } from "next/headers";
-import PreviewProvider from "@/components/PreviewProvider";
-import ProjectList from "@/components/ProjectList/ProjectList";
-import PreviewProjectList from "@/components/ProjectList/PreviewProjectList";
+import PreviewProvider from "@/src/components/PreviewProvider";
+import ProjectList from "@/src/components/ProjectList/ProjectList";
+import PreviewProjectList from "@/src/components/ProjectList/PreviewProjectList";
 
 export default async function Home() {
   const preview = draftMode().isEnabled

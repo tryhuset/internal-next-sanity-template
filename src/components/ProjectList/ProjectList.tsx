@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { urlForImage } from "@/sanity/lib/image";
-import { Project } from "@/types/Project";
+import { urlForImage } from "@/src/sanity/lib/image";
+import { Project } from "@/src/types/Project";
 
 const ProjectList = ({ data }: { data: Project[] }) => {
   return (
