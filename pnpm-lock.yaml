@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@portabletext/react': ^3.0.2
+  '@portabletext/react': ^5.0.0
   '@sanity/image-url': '1'
   '@sanity/vision': '3'
   '@types/node': 20.3.2
@@ -18,7 +18,7 @@ specifiers:
   typescript: 5.1.6
 
 dependencies:
-  '@portabletext/react': 3.0.2_react@18.2.0
+  '@portabletext/react': 5.0.0_react@18.2.0
   '@sanity/image-url': 1.0.2
   '@sanity/vision': 3.12.2_qmy6xduihzqmfbw2eonqblfi7i
   '@types/node': 20.3.2
@@ -1138,14 +1138,14 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@portabletext/react/3.0.2_react@18.2.0:
-    resolution: {integrity: sha512-uZVWXzN69Ql98ja5zmb8vIGHY4Y0jFWoMArgLcBdLJe6ia69vyYmPmUoLbkBqfH+FhWmsfLQMjgOC88q4OPaDw==}
-    engines: {node: ^14.13.1 || >=16.0.0}
+  /@portabletext/react/5.0.0_react@18.2.0:
+    resolution: {integrity: sha512-ZEYhjsiUn2Dvrhyao3qAvi6C/re9ZBt2atp14dtwWtPruMNgp1uMf3p+URf0pEEhu+rMEh9JeK0A8FgNejEWCg==}
+    engines: {node: '>=20.19 <22 || >=22.12'}
     peerDependencies:
-      react: ^17 || ^18
+      react: ^18.2 || ^19
     dependencies:
-      '@portabletext/toolkit': 2.0.1
-      '@portabletext/types': 2.0.2
+      '@portabletext/toolkit': 4.0.0
+      '@portabletext/types': 3.0.1
       react: 18.2.0
     dev: false
 
@@ -1156,11 +1156,11 @@ packages:
       '@portabletext/types': 2.0.2
     dev: false
 
-  /@portabletext/toolkit/2.0.1:
-    resolution: {integrity: sha512-vr2SeDFUFV+VmRIyYsHBMimZLiiN0S7qIridt/YLJs3Wm1dI4jsfUam82AQwheSMjvWdBiBZ+Wsjq5HZBG4htw==}
-    engines: {node: ^14.13.1 || >=16.0.0}
+  /@portabletext/toolkit/4.0.0:
+    resolution: {integrity: sha512-Jj/QIy3vzZCNcxiUGM7KjGhUhyVjch+9pOzotWRARPNe07R6nbF/cRsKL70q5Xizf+6PVtFYwks4CSXKInC+wg==}
+    engines: {node: '>=20.19 <22 || >=22.12'}
     dependencies:
-      '@portabletext/types': 2.0.2
+      '@portabletext/types': 3.0.1
     dev: false
 
   /@portabletext/types/1.0.3:
@@ -1171,6 +1171,11 @@ packages:
   /@portabletext/types/2.0.2:
     resolution: {integrity: sha512-3xTbSa80G1nODyACY0ilrmPo1PmU1xuoPvfcpzpqSEL0kX01fSW+21PKgS9BcG+GqdG9HK/VxciKWa+nFA7mqg==}
     engines: {node: ^14.13.1 || >=16.0.0 || >=18.0.0}
+    dev: false
+
+  /@portabletext/types/3.0.1:
+    resolution: {integrity: sha512-Axessc2mZ6tjbD2qIZdTZIEfBtzJBe/1pzKF372cUar6ccUCfgXU4vaKgIbqB33mB6rI75omx9rrm+SgR4rIAA==}
+    engines: {node: '>=20.19 <22 || >=22.12'}
     dev: false
 
   /@rexxars/react-json-inspector/8.0.1_react@18.2.0:
