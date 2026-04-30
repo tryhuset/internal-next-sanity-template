@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@portabletext/react': ^3.0.2
-  '@sanity/image-url': '1'
+  '@sanity/image-url': 2.1.1
   '@sanity/vision': '3'
   '@types/node': 20.3.2
   '@types/react': 18.2.14
@@ -19,7 +19,7 @@ specifiers:
 
 dependencies:
   '@portabletext/react': 3.0.2_react@18.2.0
-  '@sanity/image-url': 1.0.2
+  '@sanity/image-url': 2.1.1
   '@sanity/vision': 3.12.2_qmy6xduihzqmfbw2eonqblfi7i
   '@types/node': 20.3.2
   '@types/react': 18.2.14
@@ -1095,6 +1095,15 @@ packages:
     dev: false
     optional: true
 
+  /@noble/ed25519/3.1.0:
+    resolution: {integrity: sha512-pfcObRY3CtvwfaG9Mt5XqZdKmAQppl37tHUeuBhDUbiwJBCVY4/A4lbMvb1xKhMDx96AqAqZpMWuBX1HulhX4g==}
+    dev: false
+
+  /@noble/hashes/2.2.0:
+    resolution: {integrity: sha512-IYqDGiTXab6FniAgnSdZwgWbomxpy9FtYvLKs7wCUs2a8RkITG+DFGO1DM9cr+E3/RgADRpFjrKVaJ1z6sjtEg==}
+    engines: {node: '>= 20.19.0'}
+    dev: false
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1328,6 +1337,13 @@ packages:
     engines: {node: '>=10.0.0'}
     dev: false
 
+  /@sanity/image-url/2.1.1:
+    resolution: {integrity: sha512-qVXsF1teWR6FO3ZFAz46HDcRU+E6EQkpyncPnkGOzeJ1PgnaOiWMVbiSrZtX10s3txzzu/tAjKwbxbGHfDWgGw==}
+    engines: {node: '>=20.19.0'}
+    dependencies:
+      '@sanity/signed-urls': 2.0.4
+    dev: false
+
   /@sanity/import/3.12.2:
     resolution: {integrity: sha512-f+cC4oTCANLbbuckrmHEMydET+2r71DccsLpb/tdh8HJk+nyL0a7SppBKQXPg1MxOXrmFB+Zz7dE+mAro2gqWA==}
     engines: {node: '>=14.18.0'}
@@ -1452,6 +1468,13 @@ packages:
       object-inspect: 1.12.3
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@sanity/signed-urls/2.0.4:
+    resolution: {integrity: sha512-wH7L9iOxQDVTa7COVEXoknalNgjpqxLJoOcZYQa3D/2JVEQOGUm82RgFVgZkKoclhQ8Y8dBby+KPkFoIDoUc1g==}
+    dependencies:
+      '@noble/ed25519': 3.1.0
+      '@noble/hashes': 2.2.0
     dev: false
 
   /@sanity/slate-react/2.30.1_kszcqu3z6pwjlrzimxd2uxu72m:
