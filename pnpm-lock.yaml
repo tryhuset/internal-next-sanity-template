@@ -4,7 +4,7 @@ specifiers:
   '@portabletext/react': ^3.0.2
   '@sanity/image-url': '1'
   '@sanity/vision': '3'
-  '@types/node': 20.3.2
+  '@types/node': 22.19.19
   '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
   eslint: 8.43.0
@@ -21,7 +21,7 @@ dependencies:
   '@portabletext/react': 3.0.2_react@18.2.0
   '@sanity/image-url': 1.0.2
   '@sanity/vision': 3.12.2_qmy6xduihzqmfbw2eonqblfi7i
-  '@types/node': 20.3.2
+  '@types/node': 22.19.19
   '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
   eslint: 8.43.0
@@ -30,7 +30,7 @@ dependencies:
   next-sanity: 5.0.2_o5hp4bwkcnxfzcmstepqwl5ol4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  sanity: 3.12.2_qd3nbr76hwzxogy5uyuuy2oq4i
+  sanity: 3.12.2_gckauhnvcdbuw6mwqjdrx7zttm
   sanity-plugin-iframe-pane: 2.3.1_l6cdq47e2ecx4pjlj6gnakjfqa
   typescript: 5.1.6
 
@@ -1618,7 +1618,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.3.2
+      '@types/node': 22.19.19
     dev: false
 
   /@types/hast/2.3.4:
@@ -1650,8 +1650,10 @@ packages:
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
     dev: false
 
-  /@types/node/20.3.2:
-    resolution: {integrity: sha512-vOBLVQeCQfIcF/2Y7eKFTqrMnizK5lRNQ7ykML/5RuwVXVWxYkgwS7xbt4B6fKCUPgbSL5FSsjHQpaGQP/dQmw==}
+  /@types/node/22.19.19:
+    resolution: {integrity: sha512-dyh/xO2Fh5bYrfWaaqGrRQQGkNdmYw6AmaAUvYeUMNTWQtvb796ikLdmTchRmOlOiIJ1TDXfWgVx1QkUlQ6Hew==}
+    dependencies:
+      undici-types: 6.21.0
     dev: false
 
   /@types/normalize-package-data/2.4.1:
@@ -1876,7 +1878,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.22.5_@babel+core@7.22.5
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.3.9_@types+node@20.3.2
+      vite: 4.3.9_@types+node@22.19.19
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -4548,7 +4550,7 @@ packages:
       groq: 3.12.2
       next: 13.4.7_ob7c7ogpcitikph4afkm5ompve
       react: 18.2.0
-      sanity: 3.12.2_qd3nbr76hwzxogy5uyuuy2oq4i
+      sanity: 3.12.2_gckauhnvcdbuw6mwqjdrx7zttm
       styled-components: 5.3.11_7i5myeigehqah43i5u7wbekgba
     transitivePeerDependencies:
       - supports-color
@@ -5404,7 +5406,7 @@ packages:
       '@sanity/incompatible-plugin': 1.0.4_biqbaboplfbrettd7655fr4n2y
       '@sanity/ui': 1.6.0_62vzzrxnsy3jqmiizpwx4sb5xu
       react: 18.2.0
-      sanity: 3.12.2_qd3nbr76hwzxogy5uyuuy2oq4i
+      sanity: 3.12.2_gckauhnvcdbuw6mwqjdrx7zttm
       styled-components: 5.3.11_7i5myeigehqah43i5u7wbekgba
       usehooks-ts: 2.9.1_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
@@ -5412,7 +5414,7 @@ packages:
       - react-is
     dev: false
 
-  /sanity/3.12.2_qd3nbr76hwzxogy5uyuuy2oq4i:
+  /sanity/3.12.2_gckauhnvcdbuw6mwqjdrx7zttm:
     resolution: {integrity: sha512-IAm/XrZu+eV/VKft7gVbDTmrKjNuA913yC5z2U5HDFQCuILYQkoy059Q7Xq9CL216ZJ2olTKX5MCnQM/nuyBfQ==}
     engines: {node: '>=14.18.0'}
     hasBin: true
@@ -5526,7 +5528,7 @@ packages:
       use-device-pixel-ratio: 1.1.2_react@18.2.0
       use-hot-module-reload: 1.0.3_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
-      vite: 4.3.9_@types+node@20.3.2
+      vite: 4.3.9_@types+node@22.19.19
       yargs: 17.7.2
     transitivePeerDependencies:
       - '@types/node'
@@ -6093,6 +6095,10 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: false
 
+  /undici-types/6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+    dev: false
+
   /unique-string/2.0.0:
     resolution: {integrity: sha512-uNaeirEPvpZWSgzwsPGtU2zVSTrn/8L5q/IexZmH0eH6SA73CmAA5U4GwORTxQAZs95TAXLNqeLoPPNO5gZfWg==}
     engines: {node: '>=8'}
@@ -6233,7 +6239,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: false
 
-  /vite/4.3.9_@types+node@20.3.2:
+  /vite/4.3.9_@types+node@22.19.19:
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6258,7 +6264,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.3.2
+      '@types/node': 22.19.19
       esbuild: 0.17.19
       postcss: 8.4.24
       rollup: 3.25.1
